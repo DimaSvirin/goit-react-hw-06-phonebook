@@ -94,10 +94,10 @@ export class oldApp extends Component {
     const { filter, contacts } = this.state;
     return (
       <div>
-        <h1 style={{textAlign:"center"}}>Phonebook</h1>
+        <h1>Phonebook</h1>
         <ContactForm onForm={this.handleForm} />
 
-        <h2 style={{ textAlign: "center" }}>Contacts</h2>
+        <h2>Contacts</h2>
         <Filter value={filter} handlerChangeFilter={this.handlerChangeFilter} />
         <ContactList
           filter={filter}
@@ -108,4 +108,3 @@ export class oldApp extends Component {
     );
   }
 }
-
